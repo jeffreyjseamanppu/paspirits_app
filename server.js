@@ -9,7 +9,7 @@ const app = express();
 const port = 9021;
 
 app.use(express.json());
-app.use(helmet()); //Sets HTTP headers for security like removing X-Powered-By, enabling CSP
+app.use(helmet()); //Setss HTTP headers for security like removing X-Powered-By, enabling CSP
 app.use(cors({
     origin: '*'
 }));
