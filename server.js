@@ -6,8 +6,7 @@ const cors = require("cors");
 const accountsRoutes = require("./src/accounts/routes");
 
 const app = express();
-
-const port = 9022;
+const port = 9021;
 
 app.use(express.json());
 app.use(helmet()); //Sets HTTP headers for security like removing X-Powered-By, enabling CSP
