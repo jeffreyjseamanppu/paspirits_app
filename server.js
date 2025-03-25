@@ -5,7 +5,7 @@ const cors = require("cors");
 const accountsRoutes = require("./src/accounts/routes");
 
 const app = express();
-const port = 9021;
+const port = 9022;
 
 app.use(express.json());
 app.use(cors({
@@ -13,7 +13,7 @@ app.use(cors({
 }));
 
 //route
-app.get("/", (req, res)=> {
+app.get("/", (req, res) => {
     res.send("Who will the Super Bowl??");
 })
 
